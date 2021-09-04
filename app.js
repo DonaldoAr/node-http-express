@@ -19,7 +19,10 @@ app.get('/hola-mundo', (req, res)=> {
   })
  */
   app.get('/', (req, res)=> {
-    res.render('home');
+    res.render('home',{
+      nombre: 'Luis Donaldo Arias Garcia',
+      titulo: 'Enviado desde el controlador'
+    });
  })
 
  app.get('/generic', (req, res)=> {
