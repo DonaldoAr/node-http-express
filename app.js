@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
- 
 const port = 8080;
+//TOD0: require('hbs');
+app.set('view engine', 'hbs');
+
 
 // Servir contenido estatico: middleware
 app.use( express.static('public'))
@@ -17,7 +19,7 @@ app.get('/hola-mundo', (req, res)=> {
   })
  */
   app.get('/', (req, res)=> {
-    res.sendFile(__dirname + '/public/index.html');
+    res.render('home');
  })
 
  app.get('/generic', (req, res)=> {
