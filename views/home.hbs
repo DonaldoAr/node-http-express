@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>{{ titulo }}</title>
+		<title>{{nombre}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,12 +14,16 @@
 	<body>
 
 		<!-- Header -->
+		{{> header}}
+		<!--
 			<header id="header">
-				<div class="logo"><a href="/">{{ nombre }} <span>by TEMPLATED</span></a></div>
+				<div class="logo"><a href="index.html">{{titulo}} <span>by {{nombre}}</span></a></div>
 				<a href="#menu"><span>Menu</span></a>
 			</header>
-
+		-->
 		<!-- Nav -->
+		{{> navbar}}
+		<!--
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="/">Home</a></li>
@@ -27,7 +31,7 @@
 					<li><a href="elements">Elements</a></li>
 				</ul>
 			</nav>
-
+		-->
 		<!-- Banner -->
 		<!--
 			Note: To show a background image, set the "data-bg" attribute below
@@ -37,7 +41,7 @@
 			<section id="banner" class="bg-img" data-bg="banner.jpg">
 				<div class="inner">
 					<header>
-						<h1>{{nombre}}</h1>
+						<h1>This is Road Trip</h1>
 					</header>
 				</div>
 				<a href="#one" class="more">Learn More</a>
@@ -119,6 +123,8 @@
 			</section>
 
 		<!-- Footer -->
+		{{>footer}}
+			<!--
 			<footer id="footer">
 				<div class="inner">
 
@@ -155,14 +161,15 @@
 
 				</div>
 			</footer>
-
+			-->
 		<!-- Scripts -->
+		<!--
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		-->
 	</body>
 </html>
