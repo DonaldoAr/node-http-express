@@ -1,6 +1,7 @@
 const express = require("express");
-const app = express();
 require('dotenv').config();
+
+const app = express();
 const port = process.env.PORT;
 
 // Handlebars for partial register
